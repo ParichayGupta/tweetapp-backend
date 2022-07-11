@@ -1,0 +1,272 @@
+2022-06-02 09:36:29.534  INFO 4368 --- [restartedMain] com.tweetapp.TweetApp                    : Starting TweetApp using Java 11.0.11 on LTIN310401 with PID 4368 (C:\1. My - Files\FSE1 Training\Component 2\TweetApp\target\classes started by 896960 in C:\1. My - Files\FSE1 Training\Component 2\TweetApp)
+2022-06-02 09:36:29.555  INFO 4368 --- [restartedMain] com.tweetapp.TweetApp                    : No active profile set, falling back to default profiles: default
+2022-06-02 09:36:29.700  INFO 4368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-02 09:36:29.701  INFO 4368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-02 09:36:32.039  INFO 4368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-02 09:36:32.122  INFO 4368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 MongoDB repository interfaces.
+2022-06-02 09:36:33.004  INFO 4368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-06-02 09:36:33.027  INFO 4368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-02 09:36:33.027  INFO 4368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-02 09:36:33.261  INFO 4368 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
+2022-06-02 09:36:33.262  INFO 4368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3558 ms
+2022-06-02 09:36:34.512  INFO 4368 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-02 09:36:34.636  INFO 4368 --- [cluster-rtt-ClusterId{value='6298374aed0de5733d73e521', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2022-06-02 09:36:34.638  INFO 4368 --- [cluster-ClusterId{value='6298374aed0de5733d73e521', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2022-06-02 09:36:34.641  INFO 4368 --- [cluster-ClusterId{value='6298374aed0de5733d73e521', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=50485300}
+2022-06-02 09:36:34.866  INFO 4368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-02 09:36:35.659  INFO 4368 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-02 09:36:35.944  INFO 4368 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a7fba7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3868d28d, org.springframework.security.web.header.HeaderWriterFilter@7b599cc2, org.springframework.security.web.authentication.logout.LogoutFilter@4f893385, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c5886f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6efa1803, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8bc1041, org.springframework.security.web.session.SessionManagementFilter@59b18d71, org.springframework.security.web.access.ExceptionTranslationFilter@2171c80b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10d70601]
+2022-06-02 09:36:35.981  INFO 4368 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-02 09:36:36.111  INFO 4368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-02 09:36:36.509  WARN 4368 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8082 is already in use
+2022-06-02 09:36:36.511  INFO 4368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-02 09:36:36.526  INFO 4368 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-06-02 09:36:36.554  INFO 4368 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-02 09:36:36.589 ERROR 4368 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2022-06-02 09:36:58.838  INFO 11920 --- [restartedMain] com.tweetapp.TweetApp                    : Starting TweetApp using Java 11.0.11 on LTIN310401 with PID 11920 (C:\1. My - Files\FSE1 Training\Component 2\TweetApp\target\classes started by 896960 in C:\1. My - Files\FSE1 Training\Component 2\TweetApp)
+2022-06-02 09:36:58.842  INFO 11920 --- [restartedMain] com.tweetapp.TweetApp                    : No active profile set, falling back to default profiles: default
+2022-06-02 09:36:58.914  INFO 11920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-02 09:36:58.915  INFO 11920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-02 09:37:00.337  INFO 11920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-02 09:37:00.402  INFO 11920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 MongoDB repository interfaces.
+2022-06-02 09:37:01.252  INFO 11920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-06-02 09:37:01.263  INFO 11920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-02 09:37:01.264  INFO 11920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-02 09:37:01.483  INFO 11920 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
+2022-06-02 09:37:01.484  INFO 11920 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2569 ms
+2022-06-02 09:37:01.897  INFO 11920 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-02 09:37:01.970  INFO 11920 --- [cluster-ClusterId{value='629837654ff4b312fe186083', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
+2022-06-02 09:37:01.971  INFO 11920 --- [cluster-rtt-ClusterId{value='629837654ff4b312fe186083', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2022-06-02 09:37:01.972  INFO 11920 --- [cluster-ClusterId{value='629837654ff4b312fe186083', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23556000}
+2022-06-02 09:37:02.100  INFO 11920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-02 09:37:02.831  INFO 11920 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-02 09:37:03.261  INFO 11920 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@508e18fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fda047b, org.springframework.security.web.header.HeaderWriterFilter@68e67a97, org.springframework.security.web.authentication.logout.LogoutFilter@116faa4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dcd22c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7761b0b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12231835, org.springframework.security.web.session.SessionManagementFilter@7e8f0ae8, org.springframework.security.web.access.ExceptionTranslationFilter@377e9588, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@364fdcbd]
+2022-06-02 09:37:03.330  INFO 11920 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-02 09:37:03.515  INFO 11920 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-02 09:37:03.884  INFO 11920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/api/v1.0'
+2022-06-02 09:37:03.885  INFO 11920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-02 09:37:03.951  INFO 11920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-02 09:37:04.001  INFO 11920 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-02 09:37:04.220  INFO 11920 --- [restartedMain] com.tweetapp.TweetApp                    : Started TweetApp in 5.83 seconds (JVM running for 7.195)
+2022-06-02 09:37:05.716  INFO 11920 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-02 09:37:05.717  INFO 11920 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-02 09:37:05.718  INFO 11920 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-02 09:37:49.331  INFO 11920 --- [http-nio-8082-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:27017
+2022-06-02 09:37:59.826  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:37:59.827  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:37:59.828  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:37:59.828  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:37:59.828  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:37:59.828  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:37:59.828  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:37:59.829  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:37:59.829  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:37:59.829  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:37:59.829  INFO 11920 --- [http-nio-8082-exec-5] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:38:16.965  INFO 11920 --- [http-nio-8082-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:6}] to localhost:27017
+2022-06-02 09:38:39.874  INFO 11920 --- [http-nio-8082-exec-3] com.tweetapp.controller.TweetController  : posting tweet message sent to: tweets
+2022-06-02 09:38:39.910  INFO 11920 --- [http-nio-8082-exec-3] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2022-06-02 09:38:40.024  INFO 11920 --- [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-02 09:38:40.026  INFO 11920 --- [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-02 09:38:40.026  INFO 11920 --- [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654142920019
+2022-06-02 09:38:40.751  WARN 11920 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {tweets=LEADER_NOT_AVAILABLE}
+2022-06-02 09:38:40.754  INFO 11920 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: hd_evTS-SbO0K2y1axwgXQ
+2022-06-02 09:38:40.875  WARN 11920 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 3 : {tweets=LEADER_NOT_AVAILABLE}
+2022-06-02 09:38:40.995  WARN 11920 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {tweets=LEADER_NOT_AVAILABLE}
+2022-06-02 09:38:41.118  WARN 11920 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {tweets=LEADER_NOT_AVAILABLE}
+2022-06-02 09:38:41.273  INFO 11920 --- [http-nio-8082-exec-3] com.tweetapp.services.TweetService       : The new tweet --> Tweet(tweetId=d7ce923b-aeee-4525-9e4b-4b6dbbd4931f, username=meghna@gmail.com, tweetText=hello , firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[], comments=[])
+2022-06-02 09:38:42.031  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : meghna@gmail.com tweets --> Tweet(tweetId=d7ce923b-aeee-4525-9e4b-4b6dbbd4931f, username=meghna@gmail.com, tweetText=hello , firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[], comments=[])
+2022-06-02 09:38:56.793  INFO 11920 --- [http-nio-8082-exec-10] com.tweetapp.controller.TweetController  : posting tweet message sent to: tweets
+2022-06-02 09:38:56.795  INFO 11920 --- [http-nio-8082-exec-10] com.tweetapp.services.TweetService       : The new tweet --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[], comments=[])
+2022-06-02 09:38:58.113  INFO 11920 --- [http-nio-8082-exec-8] com.tweetapp.services.TweetService       : meghna@gmail.com tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[], comments=[])
+2022-06-02 09:39:10.894  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:39:10.896  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:39:10.898  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:39:10.898  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:39:10.899  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:39:10.899  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:39:10.899  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:39:10.899  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:10.900  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:10.900  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:10.900  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:10.900  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[], comments=[])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:39:17.621  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:17.622  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[])
+2022-06-02 09:39:28.833  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : Commented on tweet --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:39:28.851  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:28.852  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:28.852  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:28.852  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:39:28.852  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:40:05.735  INFO 11920 --- [http-nio-8082-exec-3] com.tweetapp.services.TweetService       : meghna@gmail.com tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:40:06.780  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:40:06.781  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:40:06.781  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:40:06.781  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:40:06.782  INFO 11920 --- [http-nio-8082-exec-4] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:40:07.885  INFO 11920 --- [http-nio-8082-exec-6] com.tweetapp.services.TweetService       : meghna@gmail.com tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:40:11.635  INFO 11920 --- [http-nio-8082-exec-7] com.tweetapp.services.TweetService       : returned tweet --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:41:16.388  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:41:16.389  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:41:16.389  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:41:16.389  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:41:16.390  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:41:16.391  INFO 11920 --- [http-nio-8082-exec-2] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:42:47.407  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=eaf2b13e-424f-43ed-990a-a1458581f2ca, username=ram@gmail.com, tweetText=Jai Shri ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, Krishna@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=Jai Ram)])
+2022-06-02 09:42:47.409  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0f6eb15f-6156-483b-8576-b2af9d47fc77, username=ram@gmail.com, tweetText=Ram Ram Jai Raja Ram, firstName=ram, lastName=ji, tweetDate=07-04-2022, likes=[hanuman@gmail.com, keshav@gmail.com], comments=[])
+2022-06-02 09:42:47.409  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef1d6561-0d92-4493-b40c-24673679a5f0, username=hanuman@gmail.com, tweetText=Jug Sahastr Yojan par bhaanu, Liliyo taahi madhur fal jaanu.
+, firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, keshav@gmail.com], comments=[Comment(username=ram@gmail.com, comment=Prabhu mudrika meli mukh maahi, jaladhi laanghi gaye.. achrach naahi)])
+2022-06-02 09:42:47.409  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=6f76a596-7757-42b9-ac56-181c81c762d1, username=hanuman@gmail.com, tweetText=Sab sukh lahe tumhari sharna, Tum Rakshak kaahu ko darna., firstName=hanuman, lastName=ji, tweetDate=07-04-2022, likes=[ram@gmail.com, Krishna@gmail.com, sita@gmail.com], comments=[Comment(username=hanuman@gmail.com, comment=ccoment from haniuman
+)])
+2022-06-02 09:42:47.410  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=41dfe4a3-24cd-4110-8444-e7f3f90057df, username=Krishna@gmail.com, tweetText=Jai Shri Radhe, firstName=Hare, lastName=Krishna, tweetDate=07-04-2022, likes=[Krishna@gmail.com, hanuman@gmail.com], comments=[Comment(username=Krishna@gmail.com, comment=comment)])
+2022-06-02 09:42:47.410  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=67763af1-eef4-4b71-aeaf-1a41a66f7ba9, username=keshav@gmail.com, tweetText=Bansi sab sur baaje hai, ek hi dhun me baaje hai..
+haal na pucho mohan ka, sab kuch radhe radhe hai, firstName=keshav, lastName=yadav, tweetDate=07-04-2022, likes=[keshav@gmail.com], comments=[])
+2022-06-02 09:42:47.410  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=f786a7a0-6de0-4b99-8486-fa7ec15e67a6, username=ram@gmail.com, tweetText=new tweet to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[Comment(username=ram@gmail.com, comment=new comment to test kafka consumer)])
+2022-06-02 09:42:47.410  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=b77596d6-5496-4b95-80fe-5570178f908c, username=ram@gmail.com, tweetText=new tweet from sita to test kafka consumer, firstName=ram, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:42:47.411  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=ef0ea39d-03f9-4e72-b5ae-fce2cde35331, username=hanuman@gmail.com, tweetText=new tweet
+, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:42:47.412  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=0d0aac6e-0f49-45a9-bbb1-2a2f243f09f7, username=hanuman@gmail.com, tweetText=new tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:42:47.412  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=edd0b3dd-bc3b-401d-8019-e8bcbabe2f8f, username=hanuman@gmail.com, tweetText=again a tweet, firstName=hanuman, lastName=ji, tweetDate=08-04-2022, likes=[], comments=[])
+2022-06-02 09:42:47.412  INFO 11920 --- [http-nio-8082-exec-9] com.tweetapp.services.TweetService       : All tweets --> Tweet(tweetId=e6f55cc4-d376-4331-88a9-30ae4075dcd8, username=meghna@gmail.com, tweetText=hello again, firstName=meghna, lastName=verma, tweetDate=02-06-2022, likes=[meghna@gmail.com], comments=[Comment(username=meghna@gmail.com, comment=hi testing comment)])
+2022-06-02 09:54:18.914  INFO 11920 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-02 09:54:19.111  INFO 11920 --- [RMI TCP Connection(24)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-02 09:54:19.114  INFO 11920 --- [RMI TCP Connection(24)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-06-02 09:54:19.126  INFO 11920 --- [RMI TCP Connection(24)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:27017 because the pool has been closed.
+2022-06-02 09:54:19.128  INFO 11920 --- [RMI TCP Connection(24)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:6}] to localhost:27017 because the pool has been closed.
