@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import com.tweetapp.dto.Comment;
@@ -31,10 +30,10 @@ public class TweetService {
 	@Autowired
 	private TweetRepository tweetRepository;
 	
-	@Autowired
-	KafkaTemplate<String, Tweet> kafkaTemplate;
+//	@Autowired
+//	KafkaTemplate<String, Tweet> kafkaTemplate;
 	
-	private static final String KAFKA_TOPIC = "tweets";
+//	private static final String KAFKA_TOPIC = "tweets";
 	
 	Logger logger = LoggerFactory.getLogger(TweetService.class);
 	/**
@@ -90,7 +89,7 @@ public class TweetService {
 	 */
 	public Tweet postNewTweet(String username, Tweet newTweet) {
 		newTweet.setTweetId(UUID.randomUUID().toString());
-		kafkaTemplate.send(KAFKA_TOPIC, newTweet);
+//		kafkaTemplate.send(KAFKA_TOPIC, newTweet);
 		logger.info("The new tweet --> {}",newTweet);
 		return tweetRepository.insert(newTweet);
 	}
@@ -207,7 +206,7 @@ public class TweetService {
 			List<Comment> addList = new ArrayList<Comment>();
 			addList.add(comment);
 			tweet.getComments().add(comment);
-			kafkaTemplate.send(KAFKA_TOPIC, tweet); // KAFKA SENDING EVENTS TO TOPIC
+//			kafkaTemplate.send(KAFKA_TOPIC, tweet); // KAFKA SENDING EVENTS TO TOPIC
 			logger.info("Commented on tweet --> {}",tweet);
 			return tweetRepository.save(tweet);
 		} else {

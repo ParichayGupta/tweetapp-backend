@@ -21,7 +21,7 @@ public class UserModelService {
 //  injected User Repository bean
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	Logger logger = LoggerFactory.getLogger(UserModelService.class);
 
 	/**
@@ -74,14 +74,14 @@ public class UserModelService {
 		if (userDetails.getContactNum().equalsIgnoreCase(contact)
 				&& userDetails.getUsername().equalsIgnoreCase(username)) {
 			userDetails.setPassword(newPassword);
-			logger.info("Password Updated for --> {}",userDetails);
+			logger.info("Password Updated for --> {}", userDetails);
 			return userRepository.save(userDetails);
 		} else {
 			logger.error("cannot change password");
 			throw new Exception("Unable to change password");
 		}
 	}
-	
+
 	// Method to search for like users by username
 	public List<UserModel> getUsersByUsername(String username) {
 		return userRepository.findAll();

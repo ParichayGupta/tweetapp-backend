@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tweetapp.services.UserModelService;
@@ -47,10 +46,9 @@ public class UserController {
 	public ResponseEntity<?> searchForUsers(@PathVariable String username) {
 		return new ResponseEntity<>(userModelService.getUsersByUsername(username), HttpStatus.OK);
 	}
-	
-	 
-	@GetMapping(value="tweets/user/profile/{username}")
-	public ResponseEntity<?> searchUser(@PathVariable String username){
+
+	@GetMapping(value = "tweets/user/profile/{username}")
+	public ResponseEntity<?> searchUser(@PathVariable String username) {
 		return new ResponseEntity<>(userModelService.findByUsername(username), HttpStatus.OK);
 	}
 
