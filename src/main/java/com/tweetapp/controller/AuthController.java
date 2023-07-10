@@ -3,7 +3,6 @@ package com.tweetapp.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -36,12 +35,6 @@ public class AuthController {
 	// Injected UserRespository bean
 	@Autowired
 	private UserRepository userRepository;
-
-//  Kafka Configuration
-	@Autowired
-	private KafkaTemplate<String, String> kafkaTemplate;
-//	Kafka Topic Name
-	private static final String KAFKA_TOPIC = "tweets";
 
 	/**
 	 * Controller Method to register a new User HTTP Post Request

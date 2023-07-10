@@ -3,7 +3,6 @@ package com.tweetapp.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,11 +36,11 @@ public class TweetController {
 	private TweetService tweetService;
 
 //  Kafka Configuration
-	@Autowired
-	private KafkaTemplate<String, String> kafkaTemplate;
-
-//	Kafka Topic Name
-	private static final String KAFKA_TOPIC = "tweets";
+//	@Autowired
+//	private KafkaTemplate<String, String> kafkaTemplate;
+//
+////	Kafka Topic Name
+//	private static final String KAFKA_TOPIC = "tweets";
 
 	/**
 	 * Controller Method to get all tweets HTTP GET Request
@@ -90,7 +89,7 @@ public class TweetController {
 	 */
 	@PostMapping(value = "/tweets/{username}/add")
 	public ResponseEntity<?> postNewTweet(@PathVariable("username") String username, @RequestBody Tweet newTweet) {
-		log.info("posting tweet message sent to: " + KAFKA_TOPIC);
+//		log.info("posting tweet message sent to: " + KAFKA_TOPIC);
 		return new ResponseEntity<>(tweetService.postNewTweet(username, newTweet), HttpStatus.CREATED);
 	}
 
@@ -219,14 +218,14 @@ public class TweetController {
 	public ResponseEntity<?> replyToTweet(@PathVariable("username") String username,
 			@PathVariable("tweetId") String tweetId, @RequestBody Reply tweetReply) {
 		try {
-			kafkaTemplate.send(KAFKA_TOPIC, username + " has commented on a tweet.");
+//			kafkaTemplate.send(KAFKA_TOPIC, username + " has commented on a tweet.");
 			return new ResponseEntity<>(tweetService.replyTweet(username, tweetId, tweetReply.getComment()),
 					HttpStatus.OK);
 		} catch (TweetNotFoundException e) {
-			kafkaTemplate.send(KAFKA_TOPIC, username + " has encounterd an error while commenting on a tweet");
+//			kafkaTemplate.send(KAFKA_TOPIC, username + " has encounterd an error while commenting on a tweet");
 			return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
 		} catch (Exception e) {
-			kafkaTemplate.send(KAFKA_TOPIC, username + " has encounterd a server error while commenting on a tweet");
+//			kafkaTemplate.send(KAFKA_TOPIC, username + " has encounterd a server error while commenting on a tweet");
 			return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"),
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
